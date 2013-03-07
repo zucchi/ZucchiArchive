@@ -1,0 +1,35 @@
+{
+    "name": "zucchi/archive",
+    "description": "A module to help facilitate archive management",
+    "type": "library",
+    "keywords": [
+        "archive",
+        "zf2"
+    ],
+    "homepage": "https://github.com/zucchi/Zucchi",
+    "authors" : [{
+        "name": "Matt Cockayne",
+        "email" : "matt@zucchi.co.uk",
+        "homepage" : "http://devincharge.com/"
+    }],
+    "license": "BSD-3-Clause",
+    "repositories": [
+        {
+            "type": "pear",
+            "url": "http://pear.php.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.1",
+        "zendframework/zendframework": "2.1.*",
+        "pear-pear/Archive_Tar": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "ZucchiArchive": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    }
+}
